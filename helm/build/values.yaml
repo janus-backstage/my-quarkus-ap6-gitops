@@ -1,0 +1,21 @@
+app:
+  name: my-quarkus-ap6
+  namespace: my-quarkus-ap6-dev
+  cluster: .apps.ocp4.quitala.eu
+
+git:
+  branch: main
+  repo: https://github.com/janus-backstage/my-quarkus-ap6.git
+  org: janus-backstage
+  name: my-quarkus-ap6
+  host: github.com
+  token: ''
+  webhookSecret: ''
+
+
+image:
+  registry: Openshift
+  organization: 
+  host: image-registry.openshift-image-registry.svc:5000
+  name: my-quarkus-ap6
+  tag: latest
